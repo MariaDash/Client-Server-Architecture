@@ -405,3 +405,6 @@ Application layer
 Transport layer
 Internet layer
 Network interface
+
+https://www.guru99.com/tcp-ip-model.html
+https://www.imperva.com/learn/application-security/osi-model/
