@@ -318,10 +318,10 @@ It also includes how bits should optically be signaled by hardware devices which
 A network layer is a combination of the data line and defined in the article of OSI reference model. This layer defines how the data should be sent physically through the network. This layer is responsible for the transmission of the data between two devices on the same network.Ethernet.
 
 Every host has:
-IP -address for connection between other devices in one local network
-SM (subnetmask) - for communication between other local networks
-DG (Default Gateway - Router's IP address) - for internet connection by FTP
-DNS Server IP(s) - for full internet connection
+IP -Host's Identity on the internet
+SM (subnetmask) - Size of host's network
+DG (Default Gateway - Router's IP address) - for internet connection to FTP server by IP address
+DNS Server IP(s) - for full internet connection by domain names
 
 Also DHCP (dinamic Host Configuration Protocol) - automatically connection to new WiFi .
 
