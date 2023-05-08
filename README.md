@@ -267,27 +267,20 @@ TCP/IP is a layered server architecture system in which each layer is defined ac
 
 Four Layers of TCP/IP model
 
-======================================================
-
-
-
-
-
-
-
-Application Layer
+`Application Layer`
 Application layer interacts with an application program, which is the highest level of OSI model. The application layer is the OSI layer, which is closest to the end-user. It means the OSI application layer allows users to interact with other software application.
 
 Application layer interacts with software applications to implement a communicating component. The interpretation of data by the application program is always outside the scope of the OSI model.
 
 Example of the application layer is an application such as file transfer, email, remote login, etc.
 
-The function of the Application Layers are:
-Application-layer helps you to identify communication partners, determining resource availability, and synchronizing communication.
-It allows users to log on to a remote host
-This layer provides various e-mail services
-This application offers distributed database sources and access for global information about various objects and services.
-Transport Layer
+`The function of the Application Layers are`:
++ Application-layer helps you to identify communication partners, determining resource availability, and synchronizing communication.
++ It allows users to log on to a remote host
++ This layer provides various e-mail services
++ This application offers distributed database sources and access for global information about various objects and services.
+
+`Transport Layer`
 Transport layer builds on the network layer in order to provide data transport from a process on a source system machine to a process on a destination system. It is hosted using single or multiple networks, and also maintains the quality of service functions.
 
 It determines how much data should be sent where and at what rate. This layer builds on the message which are received from the application layer. It helps ensure that data units are delivered error-free and in sequence.
@@ -296,11 +289,12 @@ Transport layer helps you to control the reliability of a link through flow cont
 
 The transport layer also offers an acknowledgment of the successful data transmission and sends the next data in case no errors occurred. TCP is the best-known example of the transport layer.
 
-Important functions of Transport Layers:
-It divides the message received from the session layer into segments and numbers them to make a sequence.
-Transport layer makes sure that the message is delivered to the correct process on the destination machine.
-It also makes sure that the entire message arrives without any error else it should be retransmitted.
-Internet Layer
+`Important functions of Transport Layers`:
++ It divides the message received from the session layer into segments and numbers them to make a sequence.
++ Transport layer makes sure that the message is delivered to the correct process on the destination machine.
++ It also makes sure that the entire message arrives without any error else it should be retransmitted.
+
+`Internet Layer`
 An internet layer is a second layer of TCP/IP layes of the TCP/IP model. It is also known as a network layer. The main work of this layer is to send the packets from any network, and any computer still they reach the destination irrespective of the route they take.
 
 The Internet layer offers the functional and procedural method for transferring variable length data sequences from one node to another with the help of various networks.
@@ -309,104 +303,108 @@ Message delivery at the network layer does not give any guaranteed to be reliabl
 
 Layer-management protocols that belong to the network layer are:
 
-Routing protocols
-Multicast group management
-Network-layer address assignment.
-The Network Interface Layer
++ Routing protocols
++ Multicast group management
++ Network-layer address assignment.
+
+`The Network Interface Layer`
 Network Interface Layer is this layer of the four-layer TCP/IP model. This layer is also called a network access layer. It helps you to defines details of how data should be sent using the network.
 
 It also includes how bits should optically be signaled by hardware devices which directly interfaces with a network medium, like coaxial, optical, coaxial, fiber, or twisted-pair cables.
 
 A network layer is a combination of the data line and defined in the article of OSI reference model. This layer defines how the data should be sent physically through the network. This layer is responsible for the transmission of the data between two devices on the same network.
 
-Differences between OSI and TCP/IP models
-Difference between OSI and TCP/IP model
+![Differences between OSI and TCP/IP models](https://www.guru99.com/images/1/093019_0615_TCPIPModelW3.png)
+
 Difference between OSI and TCP/IP model
 
 Here, are some important differences between the OSI and TCP/IP model:
 
-OSI Model	TCP/IP model
-It is developed by ISO (International Standard Organization)	It is developed by ARPANET (Advanced Research Project Agency Network).
-OSI model provides a clear distinction between interfaces, services, and protocols.	TCP/IP doesn’t have any clear distinguishing points between services, interfaces, and protocols.
-OSI refers to Open Systems Interconnection.	TCP refers to Transmission Control Protocol.
-OSI uses the network layer to define routing standards and protocols.	TCP/IP uses only the Internet layer.
-OSI follows a vertical approach.	TCP/IP follows a horizontal approach.
-OSI model use two separate layers physical and data link to define the functionality of the bottom layers.	TCP/IP uses only one layer (link).
-OSI layers have seven layers.	TCP/IP has four layers.
-OSI model, the transport layer is only connection-oriented.	A layer of the TCP/IP model is both connection-oriented and connectionless.
-In the OSI model, the data link layer and physical are separate layers.	In TCP, physical and data link are both combined as a single host-to-network layer.
-Session and presentation layers are not a part of the TCP model.	There is no session and presentation layer in TCP model.
-It is defined after the advent of the Internet.	It is defined before the advent of the internet.
-The minimum size of the OSI header is 5 bytes.	Minimum header size is 20 bytes.
-Most Common TCP/IP Protocols
+|OSI Model|TCP/IP model|
+|:---|:---|
+|It is developed by ISO (International Standard Organization)|It is developed by ARPANET (Advanced Research Project Agency Network).|
+|OSI model provides a clear distinction between interfaces, services, and protocols.|TCP/IP doesn’t have any clear distinguishing points between services, interfaces, and protocols.|
+|OSI refers to Open Systems Interconnection.|TCP refers to Transmission Control Protocol.|
+|OSI uses the network layer to define routing standards and protocols.|TCP/IP uses only the Internet layer.|
+|OSI follows a vertical approach.|TCP/IP follows a horizontal approach.|
+|OSI model use two separate layers physical and data link to define the functionality of the bottom layers.|TCP/IP uses only one layer (link).|
+|OSI layers have seven layers.|TCP/IP has four layers.|
+|OSI model, the transport layer is only connection-oriented.|A layer of the TCP/IP model is both connection-oriented and connectionless.|
+|In the OSI model, the data link layer and physical are separate layers.|In TCP, physical and data link are both combined as a single host-to-network layer.|
+|Session and presentation layers are not a part of the TCP model.|There is no session and presentation layer in TCP model.|
+|It is defined after the advent of the Internet.|It is defined before the advent of the internet.|
+
+`Most Common TCP/IP Protocols`
+
 Some widely used most common TCP/IP protocol are:
 
-TCP:
+`TCP`:
 Transmission Control Protocol is an internet protocol suite which breaks up the message into TCP Segments and reassembling them at the receiving side.
 
-IP:
+`IP`:
 An Internet Protocol address that is also known as an IP address is a numerical label. It is assigned to each device that is connected to a computer network which uses the IP for communication. Its routing function allows internetworking and essentially establishes the Internet. Combination of IP with a TCP allows developing a virtual connection between a destination and a source.
 
-HTTP:
+`HTTP`:
 The Hypertext Transfer Protocol is a foundation of the World Wide Web. It is used for transferring webpages and other such resources from the HTTP server or web server to the web client or the HTTP client. Whenever you use a web browser like Google Chrome or Firefox, you are using a web client. It helps HTTP to transfer web pages that you request from the remote servers.
 
-SMTP:
+`SMTP`:
 SMTP stands for Simple mail transfer protocol. This protocol supports the e-mail is known as a simple mail transfer protocol. This protocol helps you to send the data to another e-mail address.
 
 SNMP:
 SNMP stands for Simple Network Management Protocol. It is a framework which is used for managing the devices on the internet by using the TCP/IP protocol.
 
-DNS:
+`DNS`:
 DNS stands for Domain Name System. An IP address that is used to identify the connection of a host to the internet uniquely. However, users prefer to use names instead of addresses for that DNS.
 
-TELNET:
+`TELNET`:
 TELNET stands for Terminal Network. It establishes the connection between the local and remote computer. It established connection in such a manner that you can simulate your local system at the remote system.
 
-FTP:
+`FTP`:
 FTP stands for File Transfer Protocol. It is a mostly used standard protocol for transmitting the files from one machine to another.
 
-Advantages of the TCP/IP model
+`Advantages of the TCP/IP model`
 Here, are pros/benefits of using the TCP/IP model:
 
-It helps you to establish/set up a connection between different types of computers.
-It operates independently of the operating system.
-It supports many routing-protocols.
-It enables the internetworking between the organizations.
-TCP/IP model has a highly scalable client-server architecture.
-It can be operated independently.
-Supports a number of routing protocols.
-It can be used to establish a connection between two computers.
-Disadvantages of the TCP/IP model
++ It helps you to establish/set up a connection between different types of computers.
++ It operates independently of the operating system.
++ It supports many routing-protocols.
++ It enables the internetworking between the organizations.
++ TCP/IP model has a highly scalable client-server architecture.
++ It can be operated independently.
++ Supports a number of routing protocols.
++ It can be used to establish a connection between two computers.
+`Disadvantages of the TCP/IP model`
 Here, are few drawbacks of using the TCP/IP model:
 
-TCP/IP is a complicated model to set up and manage.
-The shallow/overhead of TCP/IP is higher-than IPX (Internetwork Packet Exchange).
-In this, model the transport layer does not guarantee delivery of packets.
-Replacing protocol in TCP/IP is not easy.
-It has no clear separation from its services, interfaces, and protocols.
-Summary:
-The full form of TCP/IP model explained as Transmission Control Protocol/ Internet Protocol.
-TCP supports flexible architecture
-Application layer interacts with an application program, which is the highest level of OSI model.
-Internet layer is a second layer of the TCP/IP model. It is also known as a network layer.
-Transport layer builds on the network layer in order to provide data transport from a process on a source system machine to a process on a destination system.
-Network Interface Layer is this layer of the four-layer TCP/IP model. This layer is also called a network access layer.
-OSI model is developed by ISO (International Standard Organization) whereas TCP/IP model is developed by ARPANET (Advanced Research Project Agency Network).
-An Internet Protocol address that is also known as an IP address is a numerical label.
-HTTP is a foundation of the World Wide Web.
-SMTP stands for Simple mail transfer protocol which supports the e-mail is known as a simple mail transfer
-SNMP stands for Simple Network Management Protocol.
-DNS stands for Domain Name System.
-TELNET stands for Terminal Network. It establishes the connection between the local and remote computer
-FTP stands for File Transfer Protocol. It is a mostly used standard protocol for transmitting the files from one machine to another.
-The biggest benefit of TCP/IP model is that it helps you to establish/set up a connection between different types of computers.
-TCP/IP is a complicated model to set up and manage.
-What are the different types of TCP/IP layers?
++ TCP/IP is a complicated model to set up and manage.
++ The shallow/overhead of TCP/IP is higher-than IPX (Internetwork Packet Exchange).
++ In this, model the transport layer does not guarantee delivery of packets.
++ Replacing protocol in TCP/IP is not easy.
++ It has no clear separation from its services, interfaces, and protocols.
+
+`Summary`:
++ The full form of TCP/IP model explained as Transmission Control Protocol/ Internet Protocol.
++ TCP supports flexible architecture
++ Application layer interacts with an application program, which is the highest level of OSI model.
++ Internet layer is a second layer of the TCP/IP model. It is also known as a network layer.
++ Transport layer builds on the network layer in order to provide data transport from a process on a source system machine to a process on a destination system.
++ Network Interface Layer is this layer of the four-layer TCP/IP model. This layer is also called a network access layer.
++ OSI model is developed by ISO (International Standard Organization) whereas TCP/IP model is developed by ARPANET (Advanced Research Project Agency Network).
++ An Internet Protocol address that is also known as an IP address is a numerical label.
++ HTTP is a foundation of the World Wide Web.
++ SMTP stands for Simple mail transfer protocol which supports the e-mail is known as a simple mail transfer
++ SNMP stands for Simple Network Management Protocol.
++ DNS stands for Domain Name System.
++ TELNET stands for Terminal Network. It establishes the connection between the local and remote computer
++ FTP stands for File Transfer Protocol. It is a mostly used standard protocol for transmitting the files from one machine to another.
++ The biggest benefit of TCP/IP model is that it helps you to establish/set up a connection between different types of computers.
++ TCP/IP is a complicated model to set up and manage.
+`What are the different types of TCP/IP layers`?
 There are four types of TCP/IP layers.
-Application layer
-Transport layer
-Internet layer
-Network interface
++ Application layer
++ Transport layer
++ Internet layer
++ Network interface
 
 https://www.guru99.com/tcp-ip-model.html
 https://www.imperva.com/learn/application-security/osi-model/
