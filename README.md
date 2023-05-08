@@ -272,7 +272,7 @@ Four Layers of TCP/IP model
 `Application Layer`
 Application layer interacts with an application program, which is the highest level of OSI model. The application layer is the OSI layer, which is closest to the end-user. It means the OSI application layer allows users to interact with other software application.
 
-Application layer interacts with software applications to implement a communicating component. The interpretation of data by the application program is always outside the scope of the OSI model.
+Application layer interacts with software applications to implement a communicating component. The interpretation of data by the application program is always outside the scope of the OSI model. HTTP, SMTP, FTP protocols work/ Applications are uniquely demarcated with a combination of IP:Port (or socket) (443: HTTPS web applications, 8080: HTTP applications). A lot of ports are reserved on the client computer.
 
 Example of the application layer is an application such as file transfer, email, remote login, etc.
 
@@ -295,7 +295,7 @@ The transport layer also offers an acknowledgment of the successful data transmi
 + It divides the message received from the session layer into segments and numbers them to make a sequence.
 + Transport layer makes sure that the message is delivered to the correct process on the destination machine.
 + It also makes sure that the entire message arrives without any error else it should be retransmitted.
-
+TCP protocol - packet transportation, responsible for the reliability of delivery: duplicates, checks whether they have arrived, whether they are complete, re-requests lost information, arranges packets in the correct order.
 `Internet Layer`
 An internet layer is a second layer of TCP/IP layes of the TCP/IP model. It is also known as a network layer. The main work of this layer is to send the packets from any network, and any computer still they reach the destination irrespective of the route they take.
 
@@ -308,13 +308,22 @@ Layer-management protocols that belong to the network layer are:
 + Routing protocols
 + Multicast group management
 + Network-layer address assignment.
+Communication between local networks. The subnet mask and IP protocol appear - the address of the host we want to access. The subnet mask determines the subnet and the number of IP addresses that can be connected. A router appears that is connected to the public Internet.
 
 `The Network Interface Layer`
 Network Interface Layer is this layer of the four-layer TCP/IP model. This layer is also called a network access layer. It helps you to defines details of how data should be sent using the network.
 
-It also includes how bits should optically be signaled by hardware devices which directly interfaces with a network medium, like coaxial, optical, coaxial, fiber, or twisted-pair cables.
+It also includes how bits should optically be signaled by hardware devices which directly interfaces with a network medium, like coaxial, optical, fiber, or twisted-pair cables.
 
-A network layer is a combination of the data line and defined in the article of OSI reference model. This layer defines how the data should be sent physically through the network. This layer is responsible for the transmission of the data between two devices on the same network.
+A network layer is a combination of the data line and defined in the article of OSI reference model. This layer defines how the data should be sent physically through the network. This layer is responsible for the transmission of the data between two devices on the same network.Ethernet.
+
+Every host has:
+IP -address for connection between other devices in one local network
+SM (subnetmask) - for communication between other local networks
+DG (Default Gateway - Router's IP address) - for internet connection by FTP
+DNS Server IP(s) - for full internet connection
+
+Also DHCP (dinamic Host Configuration Protocol) - automatically connection to new WiFi .
 
 ![Differences between OSI and TCP/IP models](https://www.guru99.com/images/1/093019_0615_TCPIPModelW3.png)
 
