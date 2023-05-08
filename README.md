@@ -96,12 +96,13 @@ Also known as multi-tier architecture, it is the most scaled form of the other t
 ## Difference Between Peer-to-Peer Network and Client Server Architecture
 In addition to client server architecture, distributed computing applications use the peer-to-peer (P2P) application architecture. In this network, two or more peers (computers) pool resources and communicate through the decentralized system. Let us understand the difference between the two architectures.
 
-Client server architecture	                                            Peer-to-peer architecture
-It has two components i.e., clients and servers.	                      There is no difference between clients and servers.
-It has a centralized data management system.	                          It has its own data and applications and a decentralized system
-The purpose is to share information quickly.	                          Its purpose is to maintain connection among peers.
-Data is provided only in response to a request raised from the client.	In this network, peers can request as well as provide a service.
-It is suitable for small and large networks, both.	                    It is suitable for a few users, less than 10 devices.
+|Client server architecture| Peer-to-peer architecture|
+|:--- |:--- |
+|It has two components i.e., clients and servers.| There is no difference between clients and servers.|
+|It has a centralized data management system.|It has its own data and applications and a decentralized system|
+|The purpose is to share information quickly.|Its purpose is to maintain connection among peers.|
+|Data is provided only in response to a request raised from the client.|In this network, peers can request as well as provide a service.|
+|It is suitable for small and large networks, both.|It is suitable for a few users, less than 10 devices.|
 ‍
 ## Advantages of Client-Server Architecture
 The advantages of client-server architecture are as follows:
