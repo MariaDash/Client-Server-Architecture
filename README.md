@@ -235,46 +235,44 @@ Other important differences:
 
 
 ## What is the TCP/IP Model?
-TCP/IP Model helps you to determine how a specific computer should be connected to the internet and how data should be transmitted between them. It helps you to create a virtual network when multiple computer networks are connected together. The purpose of TCP/IP model is to allow communication over large distances.
+`TCP/IP Model` helps you to determine how a specific computer should be connected to the internet and how data should be transmitted between them. It helps you to create a virtual network when multiple computer networks are connected together. The purpose of TCP/IP model is to allow communication over large distances.
 
 TCP/IP stands for Transmission Control Protocol/ Internet Protocol. TCP/IP Stack is specifically designed as a model to offer highly reliable and end-to-end byte stream over an unreliable internetwork.
 
-In this TCP/IP tutorial, you will learn:
+Here, are the essential characteristics of `TCP IP protocol`:
 
-TCP Characteristics
-Four Layers of TCP/IP model
-Application Layer
-Transport Layer
-Internet Layer
-The Network Interface Layer
-Differences between OSI and TCP/IP models
-Most Common TCP/IP Protocols
-Advantages of the TCP/IP model
-Disadvantages of the TCP/IP model
-TCP Characteristics
-Here, are the essential characteristics of TCP IP protocol:
++ Support for a flexible TCP/IP architecture
++ Adding more system to a network is easy.
++ In TCP IP protocols suite, the network remains intact until the source, and destination machines were functioning properly.
++ TCP is a connection-oriented protocol.
++ TCP offers reliability and ensures that data which arrives out of sequence should put back into order.
++ TCP allows you to implement flow control, so sender never overpowers a receiver with data.
 
-Support for a flexible TCP/IP architecture
-Adding more system to a network is easy.
-In TCP IP protocols suite, the network remains intact until the source, and destination machines were functioning properly.
-TCP is a connection-oriented protocol.
-TCP offers reliability and ensures that data which arrives out of sequence should put back into order.
-TCP allows you to implement flow control, so sender never overpowers a receiver with data.
-Four Layers of TCP/IP model
+### Four Layers of TCP/IP model
 In this TCP/IP tutorial, we will explain different layers and their functionalities in TCP/IP model:
 
-TCP/IP Conceptual Layers
+![TCP/IP Conceptual Layers](https://www.guru99.com/images/1/093019_0615_TCPIPModelW1.png)
+
 TCP/IP Conceptual Layers
 The functionality of the TCP IP model is divided into four layers, and each includes specific protocols.
 
 TCP/IP is a layered server architecture system in which each layer is defined according to a specific function to perform. All these four TCP IP layers work collaboratively to transmit the data from one layer to another.
 
-Application Layer
-Transport Layer
-Internet Layer
-Network Interface
++ Application Layer
++ Transport Layer
++ Internet Layer
++ Network Interface
+
+![Four Layers of TCP/IP model](https://www.guru99.com/images/1/093019_0615_TCPIPModelW2.png)
+
 Four Layers of TCP/IP model
-Four Layers of TCP/IP model
+
+======================================================
+
+
+
+
+
 
 
 Application Layer
