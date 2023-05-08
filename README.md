@@ -25,9 +25,9 @@ Clearly, three components are essential in the client server architecture to ens
 
 1. `Workstations` – Also known as client computers or service requestors, they are dependents of servers and send them requests for resources and services. A piece of server software and computer hardware requests to access shared files and databases. For example, Laptops, Smartphones, Tablets, Desktop computers or Chat applications. Client computing is classified as following-
 
-     + Thick client/ Fat client – A thick client provides rich functionality, as it is least dependent on the server and able to perform most of the data processing tasks itself.
+     + Thick client/ Fat client – A thick client provides rich functionality, as it is least dependent on the server and able to perform most of the data processing tasks itself. ( e.g. games. The thick client has more functionality, as well as the ability to use the multi-user mode. In addition, the user will be able to interact with it offline, and the response will probably be faster.work with data due to their capacities (both software and hardware) )
         
-     + Thin client- It is a lightweight computer relying heavily on the resources of the host computer. An application server performs all the data processing tasks.
+     + Thin client- It is a lightweight computer relying heavily on the resources of the host computer. An application server performs all the data processing tasks. (e.g. PC with a browser.thin ones, in fact, act as a carrier of a graphical interface, and for processing they use the capabilities of a central server located in the data center and serviced by an external organization.)
         
      + Hybrid client- It is a combination of both thin client and thick client characteristics. A hybrid client still relies on a server for all the centralized data but is capable of local processing.
         
