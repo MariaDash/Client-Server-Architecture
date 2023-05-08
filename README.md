@@ -399,6 +399,7 @@ Here, are few drawbacks of using the TCP/IP model:
 + FTP stands for File Transfer Protocol. It is a mostly used standard protocol for transmitting the files from one machine to another.
 + The biggest benefit of TCP/IP model is that it helps you to establish/set up a connection between different types of computers.
 + TCP/IP is a complicated model to set up and manage.
+
 `What are the different types of TCP/IP layers`?
 There are four types of TCP/IP layers.
 + Application layer
