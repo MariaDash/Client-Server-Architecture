@@ -166,7 +166,7 @@ Client server model also known as the networking computing model in which a serv
 
 ## OSI Model
 
-What Is the OSI Model
+`What Is the OSI Model`
 The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s
 
 The modern Internet is not based on OSI, but on the simpler TCP/IP model. However, the OSI 7-layer model is still widely used, as it helps visualize and communicate how networks operate, and helps isolate and troubleshoot networking problems.
@@ -189,19 +189,21 @@ The presentation layer prepares data for the application layer. It defines how t
 
 `5. Session Layer`
 
-The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends. The session layer can also set checkpoints during a data transfer—if the session is interrupted, devices can resume data transfer from the last checkpoint.
+The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends. The session layer can also set checkpoints during a data transfer—if the session is interrupted, devices can resume data transfer from the last checkpoint. There is a connection between a sender and receiver. Recognition (identification, authentication, authorization), which side is transmitting, checkpoints, segmentation into packets.
 
 `4. Transport Layer`
 
-The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again.
+The transport layer takes data (packets) transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again. Responsible for the reliability of sending data from the sender to the recipient. These are TCP, UDP ports.
+TCP (Transmission Control Protocol) Traffic is sensitive to loss. Provides control over data transfer.
+UDP (User Datagram Protocol) There are no restrictions and no checks. Video, music.
 
 `3. Network Layer`
 
-The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.
+The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node. Routers receive mac-addresses and build a route from one device to another. The ARP (Address Resolution Rrotocol) protocol is used - the protocol for determining the address. With its help, 64-bit mac-addresses are converted to 32-bit IP addresses and vice versa. Data is encapsulated and decapsulated.
 
 `2. Data Link Layer`
 
-The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination. This layer is composed of two parts—Logical Link Control (LLC), which identifies network protocols, performs error checking and synchronizes frames, and Media Access Control (MAC) which uses MAC addresses to connect devices and define permissions to transmit and receive data.
+The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination. This layer is composed of two parts—Logical Link Control (LLC), which identifies network protocols, performs error checking and synchronizes frames (logical link control, data verification and correction, data transfer), and Media Access Control (MAC) which uses MAC addresses to connect devices and define permissions to transmit and receive data. Transfer addressing Converts bits into "frames". It is necessary to form the sender's data with the sender's address and the recipient's and send them over the network. Switches work at this level - the task is to transfer the generated frames from one device to another by mac-addresses.
 
 `1. Physical Layer`
 
