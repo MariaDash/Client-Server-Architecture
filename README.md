@@ -418,5 +418,90 @@ There are four types of TCP/IP layers.
 + Internet layer
 + Network interface
 
+
+
+## Monolithic vs Microservice Architecture
+![Monolithic vs Microservice Architecture](https://media.proglib.io/posts/2019/09/19/4fde07b37f99708975add2813082c098.webp)
+
+What is a monolithic architecture?
+
+A monolithic application (let's call it a monolith) is an application delivered through a single deployment. This is an application delivered as a single WAR, or a Node application with a single entry point.
+
+Example
+
+Let's imagine a classic online store. Standard modules: UI, business logic and data layer. Possible ways to interact with the service: API REST and web interface.
+
+When building a monolith, all of these things will be managed within the same module. I didn't write "same process" as that would be incorrect for scenarios where multiple instances of our module would run for higher loads.
+
+Consider the example in the following figure, where all parts are in the same deployment module:
+![Architecture](https://media.proglib.io/posts/2019/09/18/379a434eb170516211ee253dfc607075.png)
+
+Advantages
+
+The big advantage of a monolith is that it is easier to implement. With a monolithic architecture, you can quickly start implementing your business logic instead of wasting time thinking about inter-process communication.
+
+Another thing is end-to-end (E2E) tests. In a monolithic architecture, they are easier to implement.
+
+Speaking of operations, it is important to say that the monolith is easy to deploy and easy to scale. For deployment, you can use a script that loads your module and starts the application. Scaling is achieved by placing a Loadbalancer in front of multiple instances of your application. As you can see, the monolith is quite easy to operate.
+
+Now let's look at the negative aspect of monolithic architecture.
+
+Flaws
+
+Monoliths tend to be reborn from their pure state into a so-called "big ball of dirt". Briefly, this is described as a condition that occurred because the architectural rules were broken and the components grew together over time.
+
+This rebirth slows down the development process: each future feature will be more difficult to develop. Because the components grow together, they also need to be changed together. Building a new feature can mean touching 5 different places: 5 places where you need to write tests; 5 Places That May Have Unwanted Side Effects to Existing Features.
+
+Earlier I said that it is easy to scale in a monolith. This is true until it grows into a "big ball of dirt" as mentioned earlier. Scaling can be problematic when only one part of the system requires additional resources, because in a monolithic architecture you cannot scale individual parts of your system.
+
+There is practically no insulation in the monolith. A problem or bug in a module can slow down or break the entire application.
+
+The construction of a monolith often proceeds with the choice of a base. Disabling or updating your original selection can be difficult because it must be done at once and for all parts of your system.
+
+What is microservice architecture?
+
+In a microservice architecture, loosely coupled services interact with each other to perform tasks related to their business capabilities.
+
+Microservices largely got their name from the fact that there are fewer services than in a monolithic environment. However, micro is about business opportunity, not size.
+
+Compared to a monolith in microservices, you have multiple deployment units. Each service is deployed independently.
+
+Example
+
+Let's take an online store as an example again.
+
+As before, we have: UI, business logic and data layer.
+
+Here, the difference from the monolith is that all of the above have their own service and their own database. They are loosely coupled and can interact with different protocols (eg REST, gRPC, messaging) across their boundaries.
+
+The following figure shows the same example as before, but decomposed into microservices.
+
+What are the advantages and disadvantages of this option?
+
+Advantages
+
+Microservices are easier to keep modular. Technically, this is provided by hard boundaries between individual services.
+
+In large companies, different services may belong to different teams. Services can be reused by the entire company. It also allows teams to work on services largely on their own. There is no need to coordinate deployment across teams. It is better to develop services with an increase in the number of teams.
+
+Microservices are smaller and therefore easier to understand and test.
+
+Smaller sizes help when it comes to compile time, run time, and the time it takes to run tests. All of these factors affect developer productivity, as they allow you to spend less time waiting at each stage of development.
+
+Shorter startup times and the ability to deploy microservices independently are really beneficial for CI/CD. Compared to a regular monolith, it is much smoother.
+
+Microservices are not tied to the technology used in other services. So we can use the best fitting technology. Old services can be quickly rewritten to use new technologies.
+
+In microservices, isolated faults are superior to a monolithic approach. A well-designed distributed system will survive a single service failure.
+
+Flaws
+
+It all sounds pretty good, but there are downsides as well.
+
+A distributed system has its own complexity: in it, you have to deal with partial failure, more difficult interaction when testing (E2E tests), and also more complexity when implementing interaction between services.
+
+Transactions are easier to conduct in a monolith. The solution to this problem on microservices is the Saga Pattern. A good solution, but still too cumbersome to implement in practice.
+
+There are operational overheads, and many microservices are complex.
 https://www.guru99.com/tcp-ip-model.html
 https://www.imperva.com/learn/application-security/osi-model/
