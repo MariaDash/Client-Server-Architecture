@@ -1,5 +1,6 @@
 # DevTools Homework
 Here is a link to the video: https://drive.google.com/file/d/1WJh15Fb9pZ2u7YlvanpZYGUIs507vB0A/view?usp=sharing
+
 Steps in the video: 
   1. Open Chrome DevTools
   2. Go to the Elements tab
