@@ -137,6 +137,7 @@ A: Following are the variations on the client server model: –
   + Network computers
   + Thin clients
   + Mobile devices and spontaneous networking
+    
 Q: How many types of servers are there?
 A: Mainly, there are 8 types of servers.
 
@@ -150,10 +151,12 @@ A: Mainly, there are 8 types of servers.
 8. DHCP Server
 
 Q. Name two processes in the client server model for interaction?
+
 A: The two processes in client-server model are: –
 
-Sockets
-Remote Procedure Calls (RPC)
++ Sockets
++ Remote Procedure Calls (RPC)
+  
 Q: What Is Acid Property In Client Server Environment?
 A: Andrew Reuter in 1983 coined the term ACID, which stands for Atomicity, Consistence, Isolation and Durability.
 
