@@ -1,5 +1,5 @@
 # DevTools Homework
-Here is a link to the video: https://drive.google.com/file/d/1WJh15Fb9pZ2u7YlvanpZYGUIs507vB0A/view?usp=sharing
+Here is a link to the video:  <a href="https://youtu.be/uGEhw1aMRNA">Working in Chrome DevTools</a> 
 
 Steps in the video: 
   1. Open Chrome DevTools
