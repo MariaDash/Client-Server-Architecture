@@ -1,4 +1,4 @@
-# DevTools Homework
+# Working with Chrome DevTools
 Here is a link to the video:  <a href="https://youtu.be/uGEhw1aMRNA">Working in Chrome DevTools</a> 
 
 Steps in the video: 
