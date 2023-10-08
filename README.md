@@ -1,5 +1,5 @@
 # Client-Server-Architecture
-## [DevTools Homework](https://github.com/MariaDash/Client-Server-Architecture/blob/main/DevTools%20Homework.md)
+## [Wotking with DevTools](https://github.com/MariaDash/Client-Server-Architecture/blob/main/Working%20with%20DevTools.md)
 The IT industry is constantly trying hard to ensure large swaths of information, devices, and connections are as feasible as possible. The world continues to thrive in ways to stay connected for performing daily tasks. IT professionals have moved to a method known as client server architecture. Before explaining the architecture in detail and you start reading jargon such as servers, networks, data, clients and many more, let us understand the architecture in simple terms. Just like the analogy of ordering a pizza for delivery, a person calls the store to order, a store executive picks up the call to take the order and then delivers it. This is the simplest example to understand the fundamental principle of client server architecture as it best correlates with each step of the model.
 
 ## What is the Client Server Model?
